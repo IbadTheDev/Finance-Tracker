@@ -3,7 +3,6 @@ package com.dev.financetracker
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
@@ -43,13 +42,10 @@ class DetailedActivity : AppCompatActivity() {
         descInput = findViewById(R.id.descInput)
         rootView = findViewById(R.id.rootView)
 
-        transaction = intent.getParcelableExtra<Transaction>("transaction") as Transaction
+        transaction = intent.getSerializableExtra("transaction") as Transaction
         labelInput.setText(transaction.label)
         amountInput.setText(transaction.amount.toString())
-
-        val description = intent.getStringExtra("description")
-        Log.d("cat", "Description: ${transaction.description}")
-        descInput.setText(description)
+        descInput.setText(transaction.description)
 
         rootView.setOnClickListener{
             this.window.decorView.clearFocus()
@@ -86,6 +82,7 @@ class DetailedActivity : AppCompatActivity() {
                 amountLayout.error = "Please enter a valid amount"
             else {
                 val transaction = Transaction(transaction.id, label, amount, description)
+
                 update(transaction)
             }
         }
