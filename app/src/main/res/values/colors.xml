@@ -10,4 +10,5 @@
     <color name="textMain">#686868</color>
     <color name="green">#008005</color>
     <color name="red">#870000</color>
+    <color name="yellow">#FFC107</color>
 </resources>

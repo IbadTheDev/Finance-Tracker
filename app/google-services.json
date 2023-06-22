@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "493526300991",
+    "project_id": "financetracker-7f1bd",
+    "storage_bucket": "financetracker-7f1bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493526300991:android:70554205f76f8e7c89fb8a",
+        "android_client_info": {
+          "package_name": "com.dev.financetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493526300991-kmc91q0qcfbfgqifsm89ctc2ghimigou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSsQdl4y8njZFmwQnx5Wehq-ftENS0imw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493526300991-kmc91q0qcfbfgqifsm89ctc2ghimigou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

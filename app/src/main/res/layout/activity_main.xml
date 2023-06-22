@@ -144,7 +144,7 @@
             android:layout_marginBottom="10dp"
             android:src="@drawable/ic_add"
             app:borderWidth="0dp"
-            android:backgroundTint="@color/red"
+            android:backgroundTint="@color/yellow"
             android:tint="@color/white"/>
     </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
